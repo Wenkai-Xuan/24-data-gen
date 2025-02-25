@@ -508,11 +508,11 @@ int main(int argc, char **argv) {
   const uint max_attempts = rai::getParameter<double>("max_attempts", 1000);
 
   const bool randomize_mode_switch_duration =
-      rai::getParameter<bool>("randomize_mode_switch_duration", false);
+      rai::getParameter<bool>("randomize_mode_switch_duration", true);
   global_params.randomize_mod_switch_durations = randomize_mode_switch_duration;
 
   const bool avoid_repeated_evaluations =
-      rai::getParameter<bool>("avoid_repeated_evaluations", true);
+      rai::getParameter<bool>("avoid_repeated_evaluations", false);
 
   const bool compress_output =
       rai::getParameter<bool>("compress_output", false);
